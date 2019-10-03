@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-2">
+            Original
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/rotated.jpg') }}" alt="Rotated image">
+        </div>
+
+        <div class="col-md-2">
+            Rotated + Resized
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/rotated.jpg') | imagine_filter('auto_rotate_with_resizing') }}" alt="Rotated image">
+        </div>
+    </div>
+{% endblock %}
