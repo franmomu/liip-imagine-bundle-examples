@@ -26,3 +26,12 @@ liip_imagine:
             filters:
                 upscale:
                     min: [600, 600]
+
+        watermark_image:
+            filters:
+                watermark:
+                    image: ../public/images/watermark.png
+                    size: 1
+                    position: center
+                thumbnail:
+                    size: [320, 240]

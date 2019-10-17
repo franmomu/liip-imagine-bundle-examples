@@ -15,3 +15,9 @@ downscale_upscale:
     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
     defaults:
         template:  'downscale_upscale.html.twig'
+
+watermark_transparent:
+    path: /watermark_transparent
+    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template:  'watermark_transparent.html.twig'

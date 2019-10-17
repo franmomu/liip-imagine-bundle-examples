@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-2">
+            Original
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/transparent.png') }}" alt="Rotated image">
+        </div>
+
+        <div class="col-md-2">
+            Resized
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/transparent.png') | imagine_filter('watermark_image') }}" alt="image">
+        </div>
+    </div>
+{% endblock %}
