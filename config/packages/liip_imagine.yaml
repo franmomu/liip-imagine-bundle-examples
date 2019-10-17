@@ -7,3 +7,22 @@ liip_imagine:
             filters:
                 auto_rotate: ~
                 relative_resize: { widen: 120 }
+        downscale_to_1200x1200:
+            filters:
+                downscale:
+                    max: [1200, 1200]
+
+        downscale_to_300x300:
+            filters:
+                downscale:
+                    max: [300, 300]
+
+        upscale_to_300x300:
+            filters:
+                upscale:
+                    min: [300, 300]
+
+        upscale_to_600x600:
+            filters:
+                upscale:
+                    min: [600, 600]

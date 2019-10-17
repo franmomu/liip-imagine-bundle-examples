@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-2">
+            Original
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/400x400.jpg') }}" alt="Original">
+        </div>
+
+        <div class="col-md-2">
+            Downscale to 1200x1200
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/400x400.jpg') | imagine_filter('downscale_to_1200x1200') }}" alt="downscaled image">
+        </div>
+
+        <div class="col-md-2">
+            Upscale to 300x300
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/400x400.jpg') | imagine_filter('upscale_to_300x300') }}" alt="upscaled image">
+        </div>
+
+        <div class="col-md-2">
+            Downscale to 300x300
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/400x400.jpg') | imagine_filter('downscale_to_300x300') }}" alt="downscaled image">
+        </div>
+
+        <div class="col-md-2">
+            Upscale to 600x600
+        </div>
+
+        <div class="col-md-10">
+            <img src="{{ asset('images/400x400.jpg') | imagine_filter('upscale_to_600x600') }}" alt="upscaled image">
+        </div>
+    </div>
+{% endblock %}
